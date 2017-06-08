@@ -43,18 +43,19 @@
 		 pulla nie merguje lokalnego repozytorium z głównym.</span>
 	</li>
 </ul>
-<div id = "1CC">
+<div id="1CC">
 <h2>Zadanie dla grupy 1CC</h2>
-<ul class = "nice">
-<li> <em>git config --global user.name ""</em> - konfiguracja własnej nazwy użytkownika. Opcja '--global' sprawia że konfiguracja zostanie dokonana jednorazowo </li>
-<li> <em>git add .</em> - komenda dokonująca update w Index używajac aktualnego kontentu znalezionego w 'working tree', żeby przygotować 'content staged' na nastepny commit. Etapy są modyfikowane bez kasowania</li>
-<li> <em>git reset HEAD</em> - resetuje wszystkie spisy 'Index' w HEAD, pozostawiając 'working tree' bez zmian i raportuje to, co zostało zmienione. Dodatkowo można podać sposób, domyślny to '--mixed' </li>
-<li> <em>git checkout "branch"</em> - Sprawdza gałąż, która wcześniej powinna być utworzona przez komende git branch, następnie przełącza na gałąź <em>branch</em> - po jej wykonaniu HEAD wskazuje na <em>branch</em>  </li>
-<li> <em>gitk --all</em> - otwiera program ze środowiskiem graficznym, który umożliwia podejrzenie wszystkich wprowadzanych zmian na repozytorium
-    <br><figure><a target="_blank" href="http://oi65.tinypic.com/2z6giah.jpg"><img src="http://oi65.tinypic.com/2z6giah.jpg" title="przyklad dzialania gitk" style='height: 25%; width: 25%; object-fit: cover'></a></figure> </li>
-<li> <em>git branch --merged</em> - wypisuje wszystkie gałęzie połączone z HEAD (głowica gałęzi na której się znajdujemy)</li>
-<li> <em>git branch "branch" "commit hash"</em> - tworzy nową gałąź 'branch' a jako jej head (głowicę) ustawia 'commit hash'</li>
-<li> <em>git pull "remote" "branch"</em> - Pobiera gałąź 'branch' ze zdalnego repozytorium 'remote' i zapisuje ją w lokalnej gałęzi 'branch'</li>
+<ul class="nice">
+<li> <em><strong>git config --global user.name ""</strong></em> - konfiguracja własnej nazwy użytkownika. Opcja '--global' sprawia ,że konfiguracja zostanie dokonana jednorazowo.</li>
+<li> <em><strong>git add .</strong></em> - komenda dokonująca update w Index używając aktualnego kontentu znalezionego w 'working tree', żeby przygotować 'content staged' na nastepny commit. Etapy są modyfikowane bez kasowania.</li>
+<li> <em><strong>git reset HEAD</strong></em> - resetuje wszystkie spisy 'Index' w HEAD, pozostawiając 'working tree' bez zmian i raportuje to, co zostało zmienione. Dodatkowo można podać spos&oacute;b, domyślny to '--mixed'.</li>
+<li> <em><strong>git checkout "branch"</strong></em> - Sprawdza gałąź, kt&oacute;ra wcześniej powinna zostać utworzona przez komendę git branch. Następnie przełącza na gałąź <em>branch</em> ,a po jej wykonaniu HEAD wskazuje na <em>branch</em>.</li>
+<li> <em><strong>gitk --all</strong></em> - otwiera program ze środowiskiem graficznym, kt&oacute;ry umożliwia wgląd we wszystkie wprowadzone jak dotąd zmiany na repozytorium. <br />
+<figure><a href="http://oi65.tinypic.com/2z6giah.jpg" target="_blank"><img style="height: 25%; width: 25%; object-fit: cover;" title="przyklad dzialania gitk" src="http://oi65.tinypic.com/2z6giah.jpg" alt="" /></a></figure>
+</li>
+<li> <em><strong>git branch --merged</strong></em> -filtruje listę gałęzi i wyświetla wszystkie te,kt&oacute;re zostały już połączone z HEAD (głowica gałęzi na kt&oacute;rej się znajdujemy).</li>
+<li> <em><strong>git branch "branch" "commit hash"</strong></em> - tworzy nową gałąź 'branch' ,a jako jej head (głowicę) ustawia 'commit hash'.</li>
+<li> <em><strong>git pull "remote" "branch"</strong></em> - Pobiera gałąź 'branch' ze zdalnego repozytorium 'remote' ,a następnie zapisuje ją w lokalnej gałęzi 'branch'.</li>
 </ul>
 </div>
 <div id = "1CF">
@@ -103,10 +104,29 @@
 <br>
 
 	<li>
-         <div class="popup" onclick="myFunction7()"><strong>git bisect (start, bad, good, reset)</strong>
-            <span class="popuptext" id="myPopup7">Pozwala na binarne wyszukiwanie commitu, w którym pojawiła się konkretna zmiana.</span>
-        </div>
-            </li>
+		<strong>git config --global color.ui true</strong> - <span><b>Komunikaty generowane przez komendy git'a w terminalu będą miały różne kolory. Taką samą rolę jak komenda "true", pełni komenda "auto", która jest domyślna od wersji GIT 1.8.4.</b> </span>
+	</li>
+	<li>
+		<strong>git commit "NazwaPliku"</strong> - <span><b>Tworzy commit składający się z plików podanych jako argument "NazwaPliku". Pozostałe pliki w stanie staged nie są dodane do tego commita.</b></span>
+	</li>
+	<li>
+		<strong>git branch "name"</strong> - <span><b>Tworzy nową gałąź o nazwie "name" w repozytorium w , którym się aktualnie znajdujemy.</b></span>
+	</li>
+	<li>
+		<strong>git branch -v</strong> - <span><b>Wypisuje nazwę aktywnego brancha wraz z szczegółami ostatniego commita (początek skrótu sha1 oraz temat).</b></span>
+	</li>
+	<li>
+		<strong>git push "remote" "branch"</strong> - <span><b>Wysyła zmiany z ostatniego commita w lokalnej gałęzi "branch" do zdalnego repozytorium "remote".</b></span>
+	</li>
+	<li>
+		<strong>git log "branch1" --not "branch2"</strong> - <span>Wyświetli historię commitów "branch1" z pominięciem commitów będących częścią "branch2".</span>
+	</li>
+	<li>
+		<strong>git blame -C "filename"</strong> - <span>Wyszukuje fragmenty kodu przekopiowane z innych plików będących częścią tego samego commita.</span>
+        <br><figure><a target="_blank" href="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png"><img src="https://zsoltfabok.com/images/posts/2012-02-07-git-blame-line-history/git-blame-gui.png" title="przyklad dzialania git blame -c" style='height: 25%; width: 25%; object-fit: cover'></a> </figure></li>
+	</li>
+	<li>
+		<strong>git bisect (start, bad, good, reset)</strong> - <span>Pozwala na binarne wyszukiwanie commitu, w którym pojawiła się konkretna zmiana.
 			<ul class = "tick">
                     <li>
                         <div class="popup" onclick="myFunction8()">git bisect start
