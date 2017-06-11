@@ -20,7 +20,7 @@
 		<strong>git config --global user.email ""</strong> - <span>ustawia globalnie adres e-mail użytkownika używany do commitowania</span>
 	</li>
 	<li>
-		<strong>git commit -a -m ""</strong> - <span>automatycznie stage'uje wszystkie zmodyfikowane i usunięte pliki (za wyjątkiem nowych) i dodaje commit z komentarzem ""</span>
+		<strong>git commit -a -m "opis"</strong> - <span> Zatwierdza zmiany uwzględnione w poczekanlni do nowej wersji rewizji. Parametr -a (lub -all) powoduje, że pliki zmodyfikowane oraz usunięte będą automatycznie uwzględnione w tej rewizji. Parametr -m (lub -message) "opis" pozwala wprowadzić opis rewizji bezpośrednio z wiersza poleceń. Gdy opcja -m nie jest uwzględniona, git uruchomi domyślny edytor tekstu gdzie będziemy mogli ręcznie wprowadzić opis. </span>
 	</li>
 	<li>
 		<strong>git diff --staged</strong> - <span>pokazuje różnice pomiędzy ostatnim commitem a zestage'owanymi zmianami. Wyświetla zawartość poczekalni , która trafi do repozytorium z najbliższym zatwierdzeniem.</span>
