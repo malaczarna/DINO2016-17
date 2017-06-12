@@ -17,46 +17,46 @@
 <h2>Zadania dla grupy 1CE</h2>
 <ul>
 	<li>
-		<strong>git config --global user.email ""</strong> - <span>ustawia globalnie adres e-mail użytkownika używany do commitowania</span>
+		<strong>git config --global user.email ""</strong> - <span>Ustawia globalnie adres e-mail użytkownika używany do commitowania</span>
 	</li>
 	<li>
 		<strong>git commit -a -m "opis"</strong> - <span> Zatwierdza zmiany uwzględnione w poczekanlni do nowej wersji rewizji. Parametr -a (lub -all) powoduje, że pliki zmodyfikowane oraz usunięte będą automatycznie uwzględnione w tej rewizji. Parametr -m (lub -message) "opis" pozwala wprowadzić opis rewizji bezpośrednio z wiersza poleceń. Gdy opcja -m nie jest uwzględniona, git uruchomi domyślny edytor tekstu gdzie będziemy mogli ręcznie wprowadzić opis. </span>
 	</li>
 	<li>
-		<strong>git diff --staged</strong> - <span>pokazuje różnice pomiędzy ostatnim commitem a zestage'owanymi zmianami. Wyświetla zawartość poczekalni , która trafi do repozytorium z najbliższym zatwierdzeniem.</span>
+		<strong>git diff --staged</strong> - <span>Pokazuje różnice pomiędzy ostatnim commitem a zestage'owanymi zmianami. Wyświetla zawartość poczekalni , która trafi do repozytorium z najbliższym zatwierdzeniem.</span>
 	</li>
 	<li>
-		<strong>git checkout -b "branch"</strong> - <span>przełącza do gałęzi o nazwie "branch". Jeżeli nie istnieje gałąź o takiej nazwie, tworzy ją.</span>
+		<strong>git checkout -b "branch"</strong> - <span>Przełącza do gałęzi o nazwie "branch". Jeżeli nie istnieje gałąź o takiej nazwie, tworzy ją.</span>
 	</li>
 	<li>
-		<strong>git log --graph --all</strong> - <span>wyświetla graficzną (choć tekstową) reprezentację historii wszystkich commitów w repozytorium</span>
+		<strong>git log --graph --all</strong> - <span>Wyświetla graficzną (choć tekstową) reprezentację historii wszystkich commitów w repozytorium</span>
 		<br><figure><a target="_blank" href="http://i.imgur.com/8iLX0jS.png"><img src="http://i.imgur.com/8iLX0jS.png" title="git log w git bash (shell)" alt="Zachowanie komendy git log --graph -all w git bash" style='height: 25%; width: 25%; object-fit: cover'></a>
 		<figcaption>Działanie komendy w git bash (graficzna reprezentacja commitów)</figcaption> </figure>
 		<strong>Uwaga: Opcja --graph nie może być łączona z opcja --no-walk (która pokazuje tylko commity, ale bez ich poprzedników)</strong>
 	</li>
 	<li>
-		<strong>git branch -d "branch"</strong> - <span>usuwa gałąź o nazwie "branch"</span>
+		<strong>git branch -d "branch"</strong> - <span>Usuwa gałąź o nazwie "branch"</span>
 	</li>
 	<li>
-		<strong>git remote add "Grażyna" "git url"</strong> - <span>dodaje zdalne repozytorium pod nazwą "Grażyna"</span>
+		<strong>git remote add "Grażyna" "git url"</strong> - <span>Dodaje zdalne repozytorium pod nazwą "Grażyna"</span>
 	</li>
 	<li>
-		<strong>git fetch "remote" "branch"</strong> - <span>pobiera zmiany ze zdalnego repozytorium o nazwie "remote", z gałęzi "branch". W przeciwieństwie do
+		<strong>git fetch "remote" "branch"</strong> - <span>Pobiera zmiany ze zdalnego repozytorium o nazwie "remote", z gałęzi "branch". W przeciwieństwie do
 		 pulla nie merguje lokalnego repozytorium z głównym.</span>
 	</li>
 </ul>
 <div id="1CC">
 <h2>Zadanie dla grupy 1CC</h2>
 <ul class="nice">
-<li> <em><strong>git config --global user.name ""</strong></em> - konfiguracja własnej nazwy użytkownika. Opcja '--global' sprawia ,że konfiguracja zostanie dokonana jednorazowo.</li>
-<li> <em><strong>git add .</strong></em> - komenda dokonująca update w Index używając aktualnego kontentu znalezionego w 'working tree', żeby przygotować 'content staged' na nastepny commit. Etapy są modyfikowane bez kasowania.</li>
-<li> <em><strong>git reset HEAD</strong></em> - resetuje wszystkie spisy 'Index' w HEAD, pozostawiając 'working tree' bez zmian i raportuje to, co zostało zmienione. Dodatkowo można podać spos&oacute;b, domyślny to '--mixed'.</li>
+<li> <em><strong>git config --global user.name ""</strong></em> - Konfiguracja własnej nazwy użytkownika. Opcja '--global' sprawia ,że konfiguracja zostanie dokonana jednorazowo.</li>
+<li> <em><strong>git add .</strong></em> - Komenda dokonująca update w Index używając aktualnego kontentu znalezionego w 'working tree', żeby przygotować 'content staged' na nastepny commit. Etapy są modyfikowane bez kasowania.</li>
+<li> <em><strong>git reset HEAD</strong></em> - Resetuje wszystkie spisy 'Index' w HEAD, pozostawiając 'working tree' bez zmian i raportuje to, co zostało zmienione. Dodatkowo można podać spos&oacute;b, domyślny to '--mixed'.</li>
 <li> <em><strong>git checkout "branch"</strong></em> - Sprawdza gałąź, kt&oacute;ra wcześniej powinna zostać utworzona przez komendę git branch. Następnie przełącza na gałąź <em>branch</em> ,a po jej wykonaniu HEAD wskazuje na <em>branch</em>.</li>
-<li> <em><strong>gitk --all</strong></em> - otwiera program ze środowiskiem graficznym, kt&oacute;ry umożliwia wgląd we wszystkie wprowadzone jak dotąd zmiany na repozytorium. <br />
+<li> <em><strong>gitk --all</strong></em> - Otwiera program ze środowiskiem graficznym, kt&oacute;ry umożliwia wgląd we wszystkie wprowadzone jak dotąd zmiany na repozytorium. <br />
 <figure><a href="http://oi65.tinypic.com/2z6giah.jpg" target="_blank"><img style="height: 25%; width: 25%; object-fit: cover;" title="przyklad dzialania gitk" src="http://oi65.tinypic.com/2z6giah.jpg" alt="" /></a></figure>
 </li>
-<li> <em><strong>git branch --merged</strong></em> -filtruje listę gałęzi i wyświetla wszystkie te,kt&oacute;re zostały już połączone z HEAD (głowica gałęzi na kt&oacute;rej się znajdujemy).</li>
-<li> <em><strong>git branch "branch" "commit hash"</strong></em> - tworzy nową gałąź 'branch' ,a jako jej head (głowicę) ustawia 'commit hash'.</li>
+<li> <em><strong>git branch --merged</strong></em> -Filtruje listę gałęzi i wyświetla wszystkie te,kt&oacute;re zostały już połączone z HEAD (głowica gałęzi na kt&oacute;rej się znajdujemy).</li>
+<li> <em><strong>git branch "branch" "commit hash"</strong></em> - Tworzy nową gałąź 'branch' ,a jako jej head (głowicę) ustawia 'commit hash'.</li>
 <li> <em><strong>git pull "remote" "branch"</strong></em> - Pobiera gałąź 'branch' ze zdalnego repozytorium 'remote' ,a następnie zapisuje ją w lokalnej gałęzi 'branch'.</li>
 </ul>
 </div>
@@ -161,6 +161,7 @@
 	<li><a class="links" href="https://try.github.io/levels/1/challenges/1"> Interaktywny tutorial od podstaw</a></li>
 	<li><a class="links" href="http://learngitbranching.js.org/">Strona z zadaniami do ćwiczenia branchingu</a></li>
 	<li><a class="links" href="https://git-scm.com/docs">Dokumentacja git-a</a></li>
+   <li><a class="links" href="https://www.youtube.com/watch?v=LYOXC6DsCiU">Przydatny tutorial git-a w języku Polskim </a></li>
 	</ul>
 </div>
 
